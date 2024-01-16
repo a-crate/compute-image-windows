@@ -36,6 +36,7 @@ $sshd_config_path = 'C:\ProgramData\ssh\sshd_config'
 $sshd_config_text = @"
 
 $start_pattern
+Match all
 AuthorizedKeysCommand $akc_path %u
 AuthorizedKeysCommandUser System
 PasswordAuthentication no
